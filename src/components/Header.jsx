@@ -1,7 +1,6 @@
 import { useState } from "react";
-import logo from "../assets/logo.svg"
+import {ReactComponent as Logo} from "../assets/logo.svg"
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useMediaQuery } from "react-responsive";
 
 
 const Header = () => {
@@ -13,7 +12,8 @@ const Header = () => {
       <nav className="header__nav">
         <div className="nav__brand">
           <a className="brand__link" href="/">
-            <img src={logo} alt="sunnyside" />
+            {/* <img src={logo} alt="sunnyside" /> */}
+            <Logo />
           </a>
         </div>
         <div className={"header__burger"} onClick={() => setOpen(!open)}>

@@ -1,0 +1,46 @@
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    height: 447px;
+}
+
+.pic {
+    flex: 0 1 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-width: 200px;
+
+    @media (max-width: 887px) {
+        flex: 0 1 50%;
+        // height: 300px;
+        height: 50%;
+        min-width: 150px;
+    }
+
+    &_1 {
+        background-image: url("../../assets/desktop/image-gallery-milkbottles.jpg");
+
+        @media (max-width: 887px) {
+            background-position: bottom;
+        }
+    }
+
+    &_2 {
+        background-image: url("../../assets/desktop/image-gallery-orange.jpg");
+    }
+
+
+    &_3 {
+        background-image: url("../../assets/desktop/image-gallery-cone.jpg");
+
+        @media (max-width: 887px) {
+            background-position: bottom;
+        }
+    }
+
+
+    &_4 {
+        background-image: url("../../assets/desktop/image-gallery-sugarcubes.jpg");
+    }
+}

@@ -8,6 +8,14 @@
     &__burger {
         display: none;
 
+        &>:first-child {
+            transform: scale(1.4);
+
+            path {
+                fill: #fff;
+            }
+        }
+
         @media (max-width: 767px) {
             display: block;
         }
@@ -72,6 +80,14 @@
                     border-radius: 25px;
                     top: -11px;
                     font-size: 16px;
+                    color: $clr-very-dark-desat-blue;
+                    cursor: pointer;
+                    transition: all 200ms ease;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: rgba(#fff, 0.6);
+                    }
 
                     @media (max-width: 767px) {
                         position: initial;
@@ -84,7 +100,7 @@
                         font-weight: 700;
                         font-size: inherit;
                         letter-spacing: -1px;
-                        color: $clr-very-dark-desat-blue;
+                        color: inherit;
                         text-transform: uppercase;
                     }
                 }
@@ -104,14 +120,28 @@
                 color: inherit;
             }
 
-            &__brand {
-                img {
-                    width: 170px;
+            &__brand a {
+                // padding-left: 15px;
+
+                svg {
+                    transform: scale(1.4) translate(16px, 3px);
 
                     @media (max-width: 767px) {
-                        width: 140px;
+                        transform: scale(1)
+                    }
+
+                    path {
+                        fill: #fff;
                     }
                 }
+
+                // img {
+                //     width: 170px;
+
+                //     @media (max-width: 767px) {
+                //         width: 140px;
+                //     }
+                // }
             }
         }
     }

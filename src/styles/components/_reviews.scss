@@ -1,0 +1,50 @@
+.reviews {
+    margin: 100px auto 105px auto;
+    padding: 60px 0;
+
+    &__title {
+        text-align: center;
+        font-family: "Fraunces", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.34rem;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        color: $clr-very-dark-grayish-blue;
+        opacity: 0.7;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 150px;
+        text-align: center;
+
+        @media (max-width: 1279px) {
+            padding: 0 120px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 0 45px;
+        }
+
+        @media (max-width: 413px) {
+            padding: 0 25px;
+        }
+    }
+
+
+    &__item {
+        flex: 0 1 calc(1 / 3 * 100%);
+        padding: 0 15px !important;
+
+
+        @media (max-width: 1023px) {
+            flex: 0 1 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

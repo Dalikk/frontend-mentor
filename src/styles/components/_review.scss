@@ -1,0 +1,52 @@
+.review {
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        padding: 30px 0;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 72px;
+            border-radius: 100%;
+        }
+    }
+
+    &__text {
+        margin-bottom: 43px;
+        padding: 25px 0;
+        line-height: 1.79;
+        letter-spacing: -0.1px;
+        flex: 1;
+        color: $clr-very-dark-grayish-blue;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__author {}
+
+    .author {
+        width: 220px;
+        margin: 0 auto;
+        padding-right: 15px;
+
+        &__name {
+            margin-bottom: 14px;
+            font-family: "Fraunces", sans-serif;
+            font-weight: 900;
+            font-size: 18px;
+        }
+
+        &__position {
+            letter-spacing: 0.1px;
+            letter-spacing: 0.065em;
+            color: $clr-very-dark-grayish-blue;
+            opacity: 0.6;
+        }
+    }
+}
