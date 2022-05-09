@@ -28,3 +28,8 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: $fs-main;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}

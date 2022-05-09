@@ -1,0 +1,35 @@
+.start {
+    background-image: url("../../assets/desktop/image-header.jpg");
+    height: 798px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-position: center;
+    // background-size: 700px;
+    text-align: center;
+    padding: 193px 30px 0 30px;
+
+    @media (max-width: 767px) {
+        padding-top: 130px;
+        height: 538px;
+    }
+
+    h2 {
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 56px;
+        letter-spacing: 10.5px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 93px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+            letter-spacing: 8px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 36px;
+        }
+    }
+}

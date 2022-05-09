@@ -1,0 +1,118 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+
+    &__burger {
+        display: none;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.75rem 2.5rem;
+        flex-wrap: wrap;
+
+        @media (max-width: 767px) {
+            padding: 2rem 2rem;
+        }
+
+        .nav {
+            &__list {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                margin-right: 6px;
+
+                &.showBurger {
+                    display: flex;
+                }
+
+
+                @media (max-width: 767px) {
+                    display: none;
+                    position: relative;
+                    top: 40px;
+                    box-sizing: content-box;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0;
+                    background-color: #fff;
+                    gap: 30px;
+                    padding: 35px 0;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        border: 15px solid transparent;
+                        border-right: 15px solid white;
+                        border-bottom: 15px solid white;
+                        top: -29px;
+                        right: 0;
+                    }
+                }
+            }
+
+            &__item {
+                padding-top: 5px;
+                color: $clr-white;
+
+                &_round {
+                    position: relative;
+                    background-color: $clr-white;
+                    padding: 1rem 2rem;
+                    border-radius: 25px;
+                    top: -11px;
+                    font-size: 16px;
+
+                    @media (max-width: 767px) {
+                        position: initial;
+                        background-color: transparent;
+                        background-color: $clr-yellow;
+                    }
+
+                    a {
+                        font-family: 'Fraunces', sans-serif;
+                        font-weight: 700;
+                        font-size: inherit;
+                        letter-spacing: -1px;
+                        color: $clr-very-dark-desat-blue;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 48px;
+                }
+
+                @media (max-width: 767px) {
+                    margin-right: 0 !important;
+                    color: $clr-dark-grayish-blue;
+                }
+            }
+
+            &__link {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &__brand {
+                img {
+                    width: 170px;
+
+                    @media (max-width: 767px) {
+                        width: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
