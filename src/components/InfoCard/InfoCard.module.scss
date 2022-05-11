@@ -1,0 +1,48 @@
+@import "src/style/variables";
+
+.infoCard {
+  background-color: $blue-500;
+  border-radius: $radii;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+  border-radius: $radii-full;
+  @media (min-width: 1024px) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.text {
+  .subtitle {
+    font-weight: $weight-light;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .title {
+    font-weight: $weight-light;
+    margin: 0.5rem 0 0;
+    @media (min-width: 1024px) {
+      font-size: 30px;
+    }
+  }
+}
+
+

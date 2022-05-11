@@ -1,0 +1,96 @@
+@import "src/style/variables";
+
+.trackingCard {
+  width: 100%;
+  padding-top: 2.15rem;
+  background-color: white;
+  border-radius: $radii;
+
+  background-repeat: no-repeat;
+  background-position: 92% -8%;
+
+  .bck {
+  }
+
+  .content {
+    background-color: $blue-800;
+    border-radius: $radii;
+    position: relative;
+    bottom: -2px;
+
+    padding: 1.25rem;
+
+    &:hover {
+      background-color: $blue-500;
+    }
+
+    .header, .body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header {
+      margin-bottom: 1rem;
+      @media (min-width: 1024px) {
+        margin-bottom: 0.75rem;
+      }
+
+      .title {
+        font-weight: $weight-normal;
+        font-size: $fs-base;
+      }
+
+      .menu {
+        cursor: pointer;
+      }
+    }
+
+    .body{
+      .time{
+        font-size: 32px;
+        font-weight: $weight-light;
+        @media (min-width: 1024px) {
+          margin-bottom: 0.75rem;
+          font-size: 36px;
+        }
+      }
+
+      .prevPeriod{
+        font-weight: $weight-light;
+        font-size: 12px;
+        color: $blue-200;
+      }
+
+      @media (min-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+.trackingCard_work {
+  background-color: $red-100;
+  background-image: url("/images/icon-work.svg");
+}
+.trackingCard_play {
+  background-color: $blue-100;
+  background-image: url("/images/icon-play.svg");
+}
+.trackingCard_study {
+  background-color: $red-200;
+  background-image: url("/images/icon-study.svg");
+}
+.trackingCard_exercise {
+  background-color: $green-100;
+  background-image: url("/images/icon-exercise.svg");
+}
+.trackingCard_social {
+  background-color: $violet-500;
+  background-image: url("/images/icon-social.svg");
+}
+.trackingCard_selfCare {
+  background-color: $orange-100;
+  background-image: url("/images/icon-self-care.svg");
+}
