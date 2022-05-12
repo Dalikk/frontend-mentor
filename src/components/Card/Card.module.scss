@@ -1,0 +1,88 @@
+@import "src/style/variables";
+
+.card{
+  max-width: 540px;
+  background-color: $clr-dark-grayish-blue;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 1rem 1.9rem 0 1.9rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    padding: 1.5rem 2.3rem 1.5rem 2.3rem;
+  }
+
+  .title{
+    color: $clr-neon-green;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 1.5rem 0;
+    letter-spacing: 4px;
+
+    @media (min-width: 1024px) {
+    font-size: 13px;
+  }
+  }
+  .text{
+    color: $clr-light-cyan;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+  .parent {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+
+    .child {
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      width: 100%;
+      .img {
+        background-image: url("../../images/pattern-divider-mobile.svg");
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        display:block;
+        margin: 0 auto;
+        max-width:100%;
+
+        @media (min-width: 1024px) {
+          background-image: url("../../images/pattern-divider-desktop.svg");
+        }
+      }
+    }
+    svg {
+    }
+  }
+  .dice {
+    position: relative;
+    bottom: -25px;
+    display: flex;
+    background-color: $clr-neon-green;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0px 0px 37px 1px $clr-neon-green;
+    }
+
+    @media (min-width: 1024px) {
+      height: 65px;
+      width: 65px;
+      bottom: -55px;
+    }
+  }
+}
