@@ -74,6 +74,7 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     &:hover {
       box-shadow: 0px 0px 37px 1px $clr-neon-green;
